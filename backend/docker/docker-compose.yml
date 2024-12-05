@@ -1,0 +1,20 @@
+services:
+  db:
+    image: postgres
+    container_name: backend-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: backend
+    volumes:
+      - postgres_data_backend:/var/lib/postgresql/data
+    ports:
+      - "5556:5432"
+    networks:
+      - backend-network
+
+volumes:
+  postgres_data_backend:
+
+networks:
+  backend-network:

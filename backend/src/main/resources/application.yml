@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: web-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5556/web-api
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    open-in-view: false
+    show-sql: true
+
+server:
+  port: 8071
+  error:
+    include-stacktrace: never
+

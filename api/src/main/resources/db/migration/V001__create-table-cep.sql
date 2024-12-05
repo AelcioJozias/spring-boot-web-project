@@ -1,0 +1,6 @@
+CREATE TABLE cep (
+    id SERIAL PRIMARY KEY,
+    cep VARCHAR(8) NOT NULL,
+    road VARCHAR(100) NOT NULL,
+    state VARCHAR(20) NOT NULL
+);
